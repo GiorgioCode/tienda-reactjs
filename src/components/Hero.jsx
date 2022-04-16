@@ -1,14 +1,15 @@
-const Hero = () => {
-return (<div class="hero min-h-screen bg-base-200">
-<div class="hero-content flex-col lg:flex-row-reverse">
-  <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
-  <div>
-    <h1 class="text-5xl font-bold">NOVEDADES DE HOY!</h1>
-    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-    <button class="btn btn-primary">COMENZAR</button>
+const Hero = (props) => {
+  return (
+  <div className="hero  bg-orange-100">
+  <div className="hero-content flex-col lg:flex-row-reverse">
+    <img src="/pizzahumito.gif" className="max-w-sm rounded-lg shadow-2xl" />
+    <div>
+      <h1 className="text-5xl font-bold text-stone-900">{props.saludoinicial}</h1>     
+      <p className="py-6 text-red-800">{props.saludosecundario}</p>
+      <button className="btn bg-emerald-900 btn-block text-lg text-orange-100 hover:text-white hover:bg-red-800">Realizar pedido.</button>
+    </div>
   </div>
-</div>
-</div>
+  </div>
   )
 }
 

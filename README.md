@@ -1,3 +1,5 @@
-# tienda-reactjs
-Proyecto curso de REACTJS de CODERHOUSE 
+#Proyecto React.js + TailwindCSS
 
+! [Modelo inicial de interface] (modelo.PNG)
+
+! [Paleta de colores] (paleta.PNG)

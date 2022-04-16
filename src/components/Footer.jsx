@@ -1,26 +1,15 @@
 const Footer = () => {
   return (
-    <footer class="footer p-10 bg-neutral text-neutral-content">
+  <footer className="footer p-10 bg-neutral text-neutral-content bg-emerald-900 text-orange-100">
     <div>
-      <span class="footer-title">Services</span> 
-      <a class="link link-hover">Branding</a>
-      <a class="link link-hover">Design</a>
-      <a class="link link-hover">Marketing</a>
-      <a class="link link-hover">Advertisement</a>
-    </div> 
-    <div>
-      <span class="footer-title">Company</span> 
-      <a class="link link-hover">About us</a>
-      <a class="link link-hover">Contact</a>
-      <a class="link link-hover">Jobs</a>
-      <a class="link link-hover">Press kit</a>
-    </div> 
-    <div>
-      <span class="footer-title">Legal</span> 
-      <a class="link link-hover">Terms of use</a>
-      <a class="link link-hover">Privacy policy</a>
-      <a class="link link-hover">Cookie policy</a>
+      <span className="footer-title text-center">Nosotros</span> 
+      <a className="link link-hover text-center">Terminos y condiciones</a>
+      <a className="link link-hover text-center">Políticas de privacidad</a>
+      <a className="link link-hover text-center">Contacto</a>
     </div>
+      <div className="flex-1">
+        <img src="/Logo.svg" alt="" className="logo w-48 items-center"/>
+      </div>
   </footer>
   )
 }

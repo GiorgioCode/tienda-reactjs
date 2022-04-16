@@ -1,6 +1,7 @@
 import './App.css';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
+import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 
 function App() {
@@ -8,8 +9,9 @@ function App() {
     <div className="App">
       <NavBar/>
       <main className="App-main">
-        <Hero/>
-      <Footer/>
+        <Hero saludoinicial="¡Te estabamos esperando!" saludosecundario="¡Bienvenid@ a nuestra pizzeria online! te invitamos a hacer tu pedido presionando el siguiente botón."/>
+        <ItemListContainer/>
+        <Footer/>
       </main>
     </div>
   )
