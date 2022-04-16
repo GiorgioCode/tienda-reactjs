@@ -1,4 +1,4 @@
-#Proyecto React.js + TailwindCSS
+#Proyecto React.js + TailwindCSS (EN PROCESO - NO FINALIZADO)
 
 ![](https://github.com/GiorgioCode/tienda-reactjs/blob/dev/modelo.PNG)
 
