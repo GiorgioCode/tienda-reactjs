@@ -1,5 +1,5 @@
 #Proyecto React.js + TailwindCSS
 
-! [Modelo inicial de interface] (modelo.PNG)
+![](https://github.com/GiorgioCode/tienda-reactjs/blob/dev/modelo.PNG)
 
-! [Paleta de colores] (paleta.PNG)
+![](https://github.com/GiorgioCode/tienda-reactjs/blob/dev/paleta.PNG)
