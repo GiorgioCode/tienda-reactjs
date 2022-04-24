@@ -1,3 +1,5 @@
+import ItemCount from "./ItemCount"
+
 const CartWidget = () => {
   return (
     <div className="dropdown dropdown-end">
@@ -9,9 +11,9 @@ const CartWidget = () => {
     </label>
     <div tabindex="0" className="mt-3 card card-compact dropdown-content w-52 bg-stone-900 shadow">
       <div className="card-body">
-        <span className="font-bold text-left text-md text-white">1 Pizza Napolitana</span>
-        <span className="font-bold text-left text-md text-white">1 Pizza Muzzarella</span>
-        <span className="font-bold text-left text-md text-white">1 Pizza Pepperoni</span>
+        <span className="font-bold text-left text-md text-white">Pizza Napolitana <ItemCount/></span>
+        <span className="font-bold text-left text-md text-white">Pizza Muzzarella <ItemCount/></span>
+        <span className="font-bold text-left text-md text-white">Pizza Pepperoni <ItemCount/></span>
         <span className="text-info text-right text-emerald-900 text-2xl">Subtotal: $99</span>
         <div className="card-actions">
           <button className="btn bg-emerald-900 btn-block text-orange-100 hover:text-white hover:bg-red-800">Finalizar Compra</button>

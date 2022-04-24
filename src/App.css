@@ -1,4 +1,10 @@
+@font-face {
+	font-family:Amasis;
+	src: url("./Montserrat-Regular.ttf");
+}
+
 .App {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -9,7 +15,7 @@
 
 
 
-.App-main {
+.App-main {  
   background-color: #064E3B;
   min-height: 100vh;
   display: flex;
