@@ -9,12 +9,12 @@ const CartWidget = () => {
         <span className="badge badge-sm indicator-item bg-green-400 text-black text-lg">3</span>
       </div>
     </label>
-    <div tabindex="0" className="mt-3 card card-compact dropdown-content w-52 bg-stone-900 shadow">
-      <div className="card-body">
-        <span className="font-bold text-left text-md text-white">Pizza Napolitana <ItemCount/></span>
-        <span className="font-bold text-left text-md text-white">Pizza Muzzarella <ItemCount/></span>
-        <span className="font-bold text-left text-md text-white">Pizza Pepperoni <ItemCount/></span>
-        <span className="text-info text-right text-emerald-900 text-2xl">Subtotal: $99</span>
+    <div tabindex="0" className="mt-3 card card-compact dropdown-content bg-stone-900 shadow">
+      <div className="card-body w-80">
+        <span className="font-bold text-left text-md text-white"><strong className="text-xl">Pizza Napolitana</strong> <ItemCount stock={(20)} /></span>
+        <span className="font-bold text-left text-md text-white"><strong className="text-xl">Pizza Pepperoni</strong> <ItemCount stock={(28)}/></span>
+        <span className="font-bold text-left text-md text-white"><strong className="text-xl">Pizza Muzzarella</strong> <ItemCount stock={(43)}/></span>
+        <span className="text-right text-emerald-900 text-2xl">Subtotal: $99</span>
         <div className="card-actions">
           <button className="btn bg-emerald-900 btn-block text-orange-100 hover:text-white hover:bg-red-800">Finalizar Compra</button>
         </div>

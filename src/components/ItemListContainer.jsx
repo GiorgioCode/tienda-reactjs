@@ -1,3 +1,5 @@
+import ItemCount from "./ItemCount";
+
 const ItemListContainer = (props) => {
 	return (
 <div class="carousel rounded-box bg-emerald-900 p-2 w-full">
@@ -8,6 +10,7 @@ const ItemListContainer = (props) => {
                 <h3 class="font-semibold text-xl leading-6 text-gray-700 my-2">
                 {props.novedad1}
                 </h3>
+                <strong className="text-black p-1"><ItemCount stock={(23)}/></strong>
                 <button className="btn bg-emerald-900 btn-block text-lg text-orange-100 hover:text-white hover:bg-red-800">Añadir al carrito</button>
             </div>
         </div>
@@ -19,6 +22,7 @@ const ItemListContainer = (props) => {
                   <h3 class="font-semibold text-xl leading-6 text-gray-700 my-2">
                   {props.novedad2}
                   </h3>
+                  <strong className="text-black p-1"><ItemCount stock={(45)}/></strong>
                   <button className="btn bg-emerald-900 btn-block text-lg text-orange-100 hover:text-white hover:bg-red-800">Añadir al carrito</button>
               </div>
           </div>
@@ -30,6 +34,7 @@ const ItemListContainer = (props) => {
                   <h3 class="font-semibold text-xl leading-6 text-gray-700 my-2">
                   {props.novedad3}
                   </h3>
+                  <strong className="text-black p-1"><ItemCount stock={(50)}/></strong>
                   <button className="btn bg-emerald-900 btn-block text-lg text-orange-100 hover:text-white hover:bg-red-800">Añadir al carrito</button>
               </div>
           </div>
@@ -41,6 +46,7 @@ const ItemListContainer = (props) => {
                   <h3 class="font-semibold text-xl leading-6 text-gray-700 my-2">
                   {props.novedad4}
                   </h3>
+                  <strong className="text-black p-1"><ItemCount stock={(12)}/></strong>
                   <button className="btn bg-emerald-900 btn-block text-lg text-orange-100 hover:text-white hover:bg-red-800">Añadir al carrito</button>
               </div>
           </div>
@@ -52,6 +58,7 @@ const ItemListContainer = (props) => {
                   <h3 class="font-semibold text-xl leading-6 text-gray-700 my-2">
                   {props.novedad5}
                   </h3>
+                  <strong className="text-black p-1"><ItemCount stock={(8)}/></strong>
                   <button className="btn bg-emerald-900 btn-block text-lg text-orange-100 hover:text-white hover:bg-red-800">Añadir al carrito</button>
               </div>
           </div>
@@ -63,6 +70,7 @@ const ItemListContainer = (props) => {
                   <h3 class="font-semibold text-xl leading-6 text-gray-700 my-2">
                   {props.novedad6}
                   </h3>
+                  <strong className="text-black p-1"><ItemCount stock={(56)}/></strong>
                   <button className="btn bg-emerald-900 btn-block text-lg text-orange-100 hover:text-white hover:bg-red-800">Añadir al carrito</button>
               </div>
           </div>
@@ -74,6 +82,7 @@ const ItemListContainer = (props) => {
                   <h3 class="font-semibold text-xl leading-6 text-gray-700 my-2">
                   {props.novedad7}
                   </h3>
+                  <strong className="text-black p-1"><ItemCount stock={(32)}/></strong>
                   <button className="btn bg-emerald-900 btn-block text-lg text-orange-100 hover:text-white hover:bg-red-800">Añadir al carrito</button>
               </div>
           </div>
