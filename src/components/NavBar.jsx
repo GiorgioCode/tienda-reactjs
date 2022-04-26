@@ -2,7 +2,7 @@ import CartWidget from "./CartWidget"
 
 const NavBar = () => {
   return (
-    <div className="navbar bg-stone-900">
+    <div className="navbar fixed z-50 bg-stone-900">
       <div className="flex-1">
         <img src="/Logo.svg" alt="" className="logo w-48"/>
       </div>

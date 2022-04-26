@@ -1,29 +1,24 @@
-import { useState } from "react";
+import React from 'react';
+import { useState } from 'react';
 
-const ItemCount = (props) => {
-    const [cuenta, setContador] = useState(0)
-    const [stockActual, setStock] = useState(props.stock)
+const ItemCount = ({ initial, stock, onAdd }) => {
+  const [cantidadseleccionada, setCantidad] = useState(initial);
 
-    const additionHandler = () => {
-        if (cuenta < props.stock) {
-            setContador(cuenta + 1)
-            setStock(stockActual - 1)
-        }
-    }
-    const substractionHandler = () => {
-        if (cuenta > 0) {
-            setContador(cuenta - 1)
-            setStock(stockActual + 1)
-        }
-    }
+  const agregarProductos = (num) => {
+    setCantidad(cantidadseleccionada + num);
+  };
 
-    return (
-        <div className="text-center text-lg">
-        <button className="btn-circle text-lg bg-red-800 text-white" onClick={substractionHandler}> - </button>
-        <strong className="text-lg"> {cuenta} </strong> 
-        <button className="btn-circle text-lg bg-green-800 text-white" onClick={additionHandler}> + </button>
-        <strong> | Stock: {stockActual} </strong>
-        </div>
-    )
-}
-export default ItemCount
+  return (
+    <div className="count-container">
+      <div className="count-container__contador">
+        <button className="btn glass btn-circle hover:bg-red-500 hover:text-white bg-red-800 text-white text-4xl m-2" onClick={() => agregarProductos(-1)} disabled={cantidadseleccionada === initial ? true : null}> - </button>
+        <span className="count-container__qty">{cantidadseleccionada}</span>
+        <button className="btn glass btn-circle hover:bg-green-500 hover:text-white bg-green-800 text-white text-4xl m-2" onClick={() => agregarProductos(+1)} disabled={cantidadseleccionada === stock ? true : null}> + </button>
+      </div>
+      <button className="btn text-2xl w-full hover:bg-red-500 hover:text-white hover:bg-red-800 hover:text-white bg-green-900 text-white" onClick={() => onAdd(cantidadseleccionada)} disabled={stock === 0 ? true : null}> Añadir </button>
+      <p>disponibles: {stock}</p>
+    </div>
+  );
+};
+
+export default ItemCount;
