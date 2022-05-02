@@ -1,7 +1,7 @@
 import React from 'react';
 import ItemCount from './ItemCount.jsx';
-import Modal from './ItemDetailContainer.jsx';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
+import { Link } from "react-router-dom"
 
 const Item = ({ nombre, imagen, precio, id, stock, detalle}) => {
   const onAdd = (cantidadseleccionada) => {
@@ -18,15 +18,14 @@ const Item = ({ nombre, imagen, precio, id, stock, detalle}) => {
   };
 
   return (
-    <div className="card w-96 bg-base-100 shadow-xxl m-2">
-    <figure><img src={imagen} alt="Pizza" /></figure>
-    <div className="card-body bg-red-100 text-stone-900">
-      <h2 className="card-title text-4xl text-green-900">{nombre}</h2>
-      <p className='text-5xl'>${precio}</p>
-      <ItemCount stock={stock} onAdd={onAdd} initial={1} />
-    </div>
-    <Modal image={imagen} name={nombre} price={precio} detail={detalle}/>
-  </div>
+        <div className="hover:text-green-800 card w-72 bg-base-100 shadow-xxl m-2">
+        <Link to={`/detalle/${id}`}><figure><img src={imagen} alt="Pizza" /></figure></Link>
+          <div className="w-72 h-65 card-body bg-red-100 text-stone-900">
+          <Link to={`/detalle/${id}`}><h2 className="card-title text-3xl text-green-900">{nombre}</h2></Link>
+          <Link to={`/detalle/${id}`}><p className='text-4xl'>${precio}</p></Link>
+            <ItemCount stock={stock} onAdd={onAdd} initial={1} />
+          </div>
+        </div>
   );
 };
 

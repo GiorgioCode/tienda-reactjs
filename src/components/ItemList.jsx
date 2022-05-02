@@ -27,7 +27,7 @@ const ItemList = () => {
 
   return (
     
-    <div className="flex flex-wrap justify-evenly">
+    <div className="flex flex-wrap justify-evenly mt-32">
       {
         products.length ? ( 
           <>

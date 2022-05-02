@@ -1,11 +1,14 @@
+import { Link } from "react-router-dom"
 import CartWidget from "./CartWidget"
 
 const NavBar = () => {
   return (
     <div className="navbar fixed z-50 bg-stone-900">
       <div className="flex-1">
-        <img src="/Logo.svg" alt="" className="logo w-48"/>
+        <Link to={'/'}><img src="/Logo.svg" alt="" className="logo w-48"/></Link>
       </div>
+      <Link className="btn mx-1" to="/category/pizza">Pizzas</Link>
+      <Link className="btn mx-1" to="/category/pasta">Pastas</Link>
       <div className="flex-none">
         <CartWidget/>
         <div className="dropdown dropdown-end">

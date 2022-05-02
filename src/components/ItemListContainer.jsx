@@ -3,12 +3,7 @@ import ItemList from './ItemList';
 
 const ItemListContainer = () => {
   return (
-    <section className="item-list-container">
-      
-      <ItemList />
-      
-      
-    </section>
+      <ItemList />   
   );
 };
 

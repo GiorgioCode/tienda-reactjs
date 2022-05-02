@@ -1,4 +1,4 @@
-import ItemCount from "./ItemCount"
+import { Link } from "react-router-dom"
 
 const CartWidget = () => {
   return (
@@ -14,7 +14,7 @@ const CartWidget = () => {
         <span className="text-lg text-white">El carrito está vacio</span>
         <span className="text-right text-emerald-900 text-2xl">Subtotal: $0</span>
         <div className="card-actions">
-          <button className="btn bg-emerald-900 btn-block text-orange-100 hover:text-white hover:bg-red-800">Finalizar Compra</button>
+          <Link className="btn bg-emerald-900 btn-block text-orange-100 hover:text-white hover:bg-red-800" to={`/Cart/`}>Finalizar Compra</Link>
         </div>
       </div>
     </div>
